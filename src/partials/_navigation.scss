@@ -1,0 +1,87 @@
+.nav {
+  padding: 56px 0;
+}
+.nav__content {
+  display: flex;
+  align-items: center;
+}
+.nav__ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  width: 100%;
+}
+.nav__li-a {
+  display: flex;
+  text-decoration: none;
+  color: $light-grey;
+  font-size: 18px;
+  @include transition-time;
+  position: relative;
+  &:hover {
+    color: $second-black;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0%;
+      left: 0;
+      background-color: $second-black;
+      height: 2px;
+      animation: nav-line-in 0.4s both 0.2s;
+      border-radius: 4px;
+    }
+  }
+}
+.nav__li-a--active {
+  color: $second-black;
+  font-weight: 700;
+}
+// Hamburger menu
+.hamburger-react {
+  margin-left: auto;
+  display: none;
+}
+// Media queries
+@include LaptopXL {
+  .nav {
+    padding: 20px 0;
+  }
+}
+@include Laptop {
+  .hamburger-react {
+    display: flex;
+  }
+  .nav__ul {
+    display: none;
+    height: 100dvh;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .nav__ul--open {
+    display: block;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    padding: 0;
+    z-index: 9999;
+    animation: slideDown 1s normal;
+    .nav__li {
+      margin: 60px 0;
+      justify-content: center;
+      display: flex;
+    }
+    .nav__li-a {
+      font-size: 24px;
+    }
+  }
+}
+@include MobileL {
+  .nav__ul--open {
+    .nav__li-a {
+      font-size: 20px;
+    }
+  }
+}

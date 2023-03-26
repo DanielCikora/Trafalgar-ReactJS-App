@@ -1,0 +1,25 @@
+@mixin LaptopXL {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin Laptop {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin Tablet {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin MobileL {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+@mixin Mobile {
+  @media only screen and (max-width: 450px) {
+    @content;
+  }
+}

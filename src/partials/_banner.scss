@@ -1,0 +1,74 @@
+.banner {
+  position: relative;
+  background-image: linear-gradient(to right, $white, rgb(245, 245, 250));
+}
+.banner-dots__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.banner-content {
+  display: flex;
+  padding: 21px 0 261px;
+  position: relative;
+}
+// Banner Text
+.banner-content__text {
+  max-width: 442px;
+  padding-top: 73px;
+  position: relative;
+  z-index: 3;
+}
+.banner-text__h1 {
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 25px;
+}
+.banner-text__paragraph {
+  font-size: 21px;
+  line-height: 32px;
+  margin-bottom: 48px;
+}
+// Banner Image
+.banner-image__image {
+  position: absolute;
+  right: -28px;
+  top: 21px;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  max-height: 598px;
+  max-width: 693px;
+}
+// Media Queries
+@include LaptopXL {
+  .banner-image__image {
+    opacity: 50%;
+  }
+}
+@include Laptop {
+  .banner-image__image {
+    opacity: 40%;
+    max-width: 60%;
+    top: 80px;
+  }
+}
+@include Tablet {
+  .banner-content {
+    padding-bottom: 140px;
+  }
+  .banner-text__h1 {
+    font-size: 36px;
+  }
+  .banner-text__paragraph {
+    font-size: 18px;
+  }
+  .banner-image__image {
+    display: none;
+  }
+  .banner-content__text {
+    text-align: center;
+    max-width: 100%;
+  }
+}
