@@ -72,3 +72,11 @@
     max-width: 100%;
   }
 }
+@include MobileL {
+  .banner-text__h1 {
+    font-size: 26px;
+  }
+  .banner-text__paragraph {
+    font-size: 14px;
+  }
+}
