@@ -365,7 +365,6 @@ body {
 
 .btn {
   padding: 18px 40px;
-  background-color: #458ff6;
   display: inline-block;
   border-radius: 55px;
   color: #fff;
@@ -374,9 +373,13 @@ body {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   position: relative;
+  color: #458ff6;
+  background-color: #fff;
+  border: 2px solid #458ff6;
 }
 .btn:hover {
-  background-color: #1d62c3;
+  background-color: #458ff6;
+  color: #fff;
 }
 .btn:hover::after {
   content: "";
@@ -384,7 +387,6 @@ body {
   bottom: 30%;
   left: 25%;
   right: 25%;
-  background-color: #fff;
   height: 2px;
   border-radius: 4px;
   animation: line-in 0.4s both 0.2s;
@@ -550,6 +552,15 @@ body {
   font-size: 21px;
   line-height: 32px;
   margin-bottom: 48px;
+}
+
+.banner-text__btn {
+  border: none;
+  background-color: #458ff6;
+  color: #fff;
+}
+.banner-text__btn:hover {
+  background-color: #1d62c3;
 }
 
 .banner-image__image {

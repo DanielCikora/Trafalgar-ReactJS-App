@@ -30,6 +30,14 @@
   line-height: 32px;
   margin-bottom: 48px;
 }
+.banner-text__btn {
+  border: none;
+  background-color: $blue;
+  color: $white;
+  &:hover {
+    background-color: $darker-blue;
+  }
+}
 // Banner Image
 .banner-image__image {
   position: absolute;

@@ -94,6 +94,9 @@ function Services() {
               </div>
             </Link>
           </div>
+          <Link to='/AboutUs' className='btn services-btn'>
+            Learn more
+          </Link>
         </div>
       </div>
     </section>

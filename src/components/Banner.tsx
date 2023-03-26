@@ -1,5 +1,6 @@
 import BannerImage from "../assets/images/banner-manifest__image.png";
 import BannerDots from "../assets/images/banner-dots__image.png";
+import { Link } from "react-router-dom";
 function Banner() {
   return (
     <section className='banner'>
@@ -18,9 +19,9 @@ function Banner() {
               Trafalgar provides progressive, and affordable healthcare,
               accessible on mobile and online for everyone
             </p>
-            <a className='btn banner-text__btn' href='/'>
+            <Link className='btn banner-text__btn' to='/FindDoctor'>
               Consult today
-            </a>
+            </Link>
           </div>
           <img
             className='banner-image__image'
