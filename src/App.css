@@ -674,7 +674,12 @@ body {
 }
 
 .box-details {
+  margin-top: auto;
   text-align: left;
+}
+
+.box-details--report {
+  margin-top: 40px;
 }
 
 .box-image {
@@ -703,14 +708,16 @@ body {
   .services-box:hover {
     transform: scale(1.04);
   }
-  .box-details {
-    margin-top: auto;
-  }
   .box-details__title {
     font-size: 20px;
   }
   .box-details__paragraph {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 783px) {
+  .box-details--report {
+    margin-top: auto;
   }
 }
 @media only screen and (max-width: 600px) {

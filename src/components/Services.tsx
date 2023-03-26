@@ -86,7 +86,7 @@ function Services() {
               <div className='box-image'>
                 <img src={Report} alt='report-image' />
               </div>
-              <div className='box-details'>
+              <div className='box-details box-details--report'>
                 <h3 className='title box-details__title'>Tracking</h3>
                 <p className='paragraph box-details__paragraph'>
                   Track and save your medical history and health data
