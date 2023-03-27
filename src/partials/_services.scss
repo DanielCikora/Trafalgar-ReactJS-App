@@ -1,6 +1,7 @@
 .services {
   position: relative;
   background-image: linear-gradient(to right, $white, rgb(245, 245, 250));
+  padding: 94px 0;
 }
 // Services Text
 .services-title__h2 {
@@ -24,6 +25,8 @@
   margin: 0 auto;
   line-height: 30px;
   font-size: 18px;
+  position: relative;
+  z-index: 2;
 }
 // Services Boxes
 .services-blob {
@@ -45,6 +48,7 @@
   row-gap: 37px;
   position: relative;
   z-index: 2;
+  margin-bottom: 71px;
 }
 .services-box {
   text-decoration: none;
@@ -71,15 +75,20 @@
 .box-details--report {
   margin-top: 40px;
 }
-.box-image {
-  margin-bottom: 1px;
-}
 .box-details__title {
   font-size: 24px;
   margin-bottom: 13px;
 }
 .box-details__paragraph {
   font-size: 16px;
+}
+// Services BTN
+.services-btn__container {
+  display: flex;
+  justify-content: center;
+}
+.services-btn {
+  padding: 17px 49px 16px 49px;
 }
 // Media Queries
 @include Tablet {

@@ -389,6 +389,7 @@ body {
   right: 25%;
   height: 2px;
   border-radius: 4px;
+  background-color: #fff;
   animation: line-in 0.4s both 0.2s;
 }
 .btn:active {
@@ -615,6 +616,7 @@ body {
 .services {
   position: relative;
   background-image: linear-gradient(to right, #fff, rgb(245, 245, 250));
+  padding: 94px 0;
 }
 
 .services-title__h2 {
@@ -639,6 +641,8 @@ body {
   margin: 0 auto;
   line-height: 30px;
   font-size: 18px;
+  position: relative;
+  z-index: 2;
 }
 
 .services-blob {
@@ -663,6 +667,7 @@ body {
   row-gap: 37px;
   position: relative;
   z-index: 2;
+  margin-bottom: 71px;
 }
 
 .services-box {
@@ -693,10 +698,6 @@ body {
   margin-top: 40px;
 }
 
-.box-image {
-  margin-bottom: 1px;
-}
-
 .box-details__title {
   font-size: 24px;
   margin-bottom: 13px;
@@ -704,6 +705,15 @@ body {
 
 .box-details__paragraph {
   font-size: 16px;
+}
+
+.services-btn__container {
+  display: flex;
+  justify-content: center;
+}
+
+.services-btn {
+  padding: 17px 49px 16px 49px;
 }
 
 @media only screen and (max-width: 768px) {
