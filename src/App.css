@@ -683,6 +683,7 @@ body {
   padding: 53px 37px 37px 37px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px 0 #7d7987;
 }
 .services-box:hover {
   outline: 1px solid #7d7987;

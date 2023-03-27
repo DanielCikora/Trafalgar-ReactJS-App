@@ -9,10 +9,13 @@ function AboutUs() {
           <div className='nav-about__ourcompany'>
             <div className='about-ourcompany__text'>
               <p className='nav-about__p'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                quasi obcaecati quod eveniet neque? Maiores aspernatur,
-                recusandae sequi ratione mollitia incidunt, modi dolorum porro
-                sit rerum commodi amet fugit optio.
+                Welcome to Trafalgar, where we are committed to improving the
+                health and well-being of our patients through the delivery of
+                high-quality healthcare services. At our core, we believe that
+                healthcare should be patient-centered and accessible to
+                everyone. We understand that navigating the complexities of the
+                healthcare system can be overwhelming, which is why we strive to
+                provide a welcoming and supportive environment for our patients.
               </p>
             </div>
             <img
@@ -28,11 +31,11 @@ function AboutUs() {
               alt='we-care__image'
             />
             <p className='nav-about__p'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Similique reprehenderit itaque at quam, animi necessitatibus odit
-              deleniti rerum tenetur debitis omnis doloremque perspiciatis
-              quisquam laudantium! Voluptatem, sit provident enim quam molestias
-              esse culpa rem ipsum porro excepturi laboriosam! Corporis, nam.
+              Our team of experienced and compassionate medical professionals is
+              dedicated to providing personalized care that addresses the unique
+              needs of each patient. Whether you are seeking routine preventive
+              care, treatment for a chronic condition, or specialized medical
+              services, we are here to help.
             </p>
           </div>
         </div>

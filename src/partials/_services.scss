@@ -63,6 +63,7 @@
   padding: 53px 37px 37px 37px;
   cursor: pointer;
   @include transition-time;
+  box-shadow: 0 0 10px 0 $light-grey;
   &:hover {
     outline: 1px solid $light-grey;
     transform: scale(1.1);
