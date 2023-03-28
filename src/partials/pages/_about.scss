@@ -1,26 +1,113 @@
-.nav-about__h2 {
-  text-align: center;
-  font-size: 30px;
+.nav-about {
+  padding: 100px 0;
 }
-// Our company TEXT
-// Our company
+.nav-about__content {
+  font-family: $playfair-display;
+}
 .nav-about__ourcompany {
   display: flex;
+  padding: 60px 0 220px;
 }
+// Our company TEXT
+.nav-about__h2 {
+  font-size: 36px;
+}
+.nav-about__title {
+  text-align: center;
+  text-decoration: 2px solid underline;
+  margin-bottom: 50px;
+}
+.about-ourcompany__text {
+  display: flex;
+  align-self: center;
+  text-align: left;
+}
+.nav-about__p {
+  font-size: 24px;
+  line-height: 34px;
+}
+// Our company
 .nav-about__img {
-  height: auto;
-  width: 100%;
-  max-width: 50%;
+  height: 50%;
+  width: 50%;
   border-radius: 100px 4px;
 }
 // We care
 .nav-about__wecare {
   display: flex;
+  padding: 100px 0;
+}
+.nav-about__p--wecare {
+  text-align: right;
 }
 // We care img
 .about-wecare__image {
-  height: auto;
-  width: 100%;
-  max-width: 50%;
+  height: 50%;
+  width: 50%;
   border-radius: 100px 4px;
+}
+// Medical Facilities
+.nav-about__facilies {
+  padding: 100px 0;
+}
+.nav-about__p--facilities {
+  text-align: center;
+  padding: 0 40px;
+}
+.facilities-images__slider {
+  padding: 100px 0 0;
+  width: 100%;
+  position: relative;
+}
+.facilities__image {
+  height: auto;
+  max-height: 600px;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+// Slider Controls
+.slider-controls {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(100%);
+  width: 100%;
+}
+// Arrow BTN
+.slider-arrow {
+  cursor: pointer;
+  background-color: transparent;
+}
+.swiper-button-disabled {
+  opacity: 50%;
+}
+.slider-arrow--next {
+  margin-left: auto;
+}
+// Arrow IMG
+.arrow-img__prev {
+  transform: rotate(180deg);
+}
+// Media Queries
+@include Laptop {
+  .nav-about__p {
+    font-size: 20px;
+  }
+}
+@include MobileL {
+  .facilities-images {
+    flex-flow: column;
+    align-items: center;
+    gap: 0;
+  }
+  .facilities__image {
+    margin-bottom: 20px;
+    width: 60%;
+  }
 }

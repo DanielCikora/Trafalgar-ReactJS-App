@@ -5,6 +5,7 @@ import Manifest from "../assets/images/manifest__image.png";
 import MedBag from "../assets/images/med-bag__image.png";
 import Report from "../assets/images/report__image.png";
 import Blob from "../assets/images/blob__image.png";
+import ServicesDots from "../assets/images/services-dots__image.png";
 import { Link } from "react-router-dom";
 function Services() {
   return (
@@ -22,6 +23,13 @@ function Services() {
             suitable for your health
           </p>
           <div className='services-content__boxes'>
+            <div className='services-dots'>
+              <img
+                className='services-dots__image'
+                src={ServicesDots}
+                alt='dots-image'
+              />
+            </div>
             <Link to='/FindDoctor' className='services-box'>
               <div className='box-image'>
                 <img src={MagGlass} alt='magnifying-glass-image' />

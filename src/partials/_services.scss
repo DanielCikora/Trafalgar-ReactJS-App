@@ -3,6 +3,9 @@
   background-image: linear-gradient(to right, $white, rgb(245, 245, 250));
   padding: 94px 0;
 }
+.services-content {
+  position: relative;
+}
 // Services Text
 .services-title__h2 {
   text-align: center;
@@ -35,9 +38,16 @@
   top: 205px;
   left: 0;
 }
-.services-blob__image {
+.services-blob__image,
+.services-dots__image {
   width: 100%;
   height: auto;
+}
+.services-dots {
+  position: absolute;
+  z-index: -1;
+  bottom: 339px;
+  right: -1px;
 }
 .services-content__boxes {
   padding-top: 79px;
