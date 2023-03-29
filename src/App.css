@@ -492,7 +492,7 @@ body {
   }
 }
 .nav-about {
-  padding: 100px 0;
+  padding: 100px 0 10px;
 }
 
 .nav-about__content {
@@ -500,8 +500,7 @@ body {
 }
 
 .nav-about__ourcompany {
-  display: flex;
-  padding: 60px 0 220px;
+  padding: 160px 0 360px;
 }
 
 .nav-about__h2 {
@@ -512,7 +511,6 @@ body {
   text-align: center;
   -webkit-text-decoration: 2px solid underline;
           text-decoration: 2px solid underline;
-  margin-bottom: 50px;
 }
 
 .about-ourcompany__text {
@@ -524,31 +522,39 @@ body {
 .nav-about__p {
   font-size: 24px;
   line-height: 34px;
+  text-align: justify;
 }
 
 .nav-about__img {
   height: 50%;
   width: 50%;
-  border-radius: 100px 4px;
+  border-radius: 80px 20px;
+  margin: 0 0 20px 20px;
+  float: right;
 }
 
 .nav-about__wecare {
-  display: flex;
-  padding: 100px 0;
+  padding: 200px 0 200px;
 }
 
 .nav-about__p--wecare {
-  text-align: right;
+  text-align: justify;
 }
 
 .about-wecare__image {
   height: 50%;
   width: 50%;
-  border-radius: 100px 4px;
+  border-radius: 80px 20px;
+  margin: 0 20px 20px 0;
+  float: left;
 }
 
 .nav-about__facilies {
-  padding: 100px 0;
+  padding: 200px 0;
+}
+
+.nav-about__h4 {
+  margin-bottom: 120px;
 }
 
 .nav-about__p--facilities {
@@ -567,7 +573,7 @@ body {
   max-height: 600px;
   width: 100%;
   max-width: 800px;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 .swiper-slide {
@@ -580,7 +586,7 @@ body {
   display: flex;
   z-index: 10;
   top: 50%;
-  transform: translateY(100%);
+  bottom: 50%;
   width: 100%;
 }
 
@@ -601,20 +607,105 @@ body {
   transform: rotate(180deg);
 }
 
+.nav-about__partnership {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.nav-about__h5 {
+  margin-bottom: 60px;
+}
+
+.nav-bonding__img {
+  height: 50%;
+  width: 50%;
+  border-radius: 20px;
+  margin-bottom: 200px;
+}
+
+.nav-about__p--building {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.nav-about__p--mini {
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-about__ourcompany {
+    padding-bottom: 260px;
+  }
+}
 @media only screen and (max-width: 992px) {
+  .nav-about__ourcompany {
+    padding: 120px 0 160px;
+  }
   .nav-about__p {
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 600px) {
-  .facilities-images {
-    flex-flow: column;
-    align-items: center;
-    gap: 0;
+@media only screen and (max-width: 768px) {
+  .nav-bonding__img {
+    width: 80%;
+    margin-bottom: 100px;
   }
-  .facilities__image {
-    margin-bottom: 20px;
-    width: 60%;
+}
+@media only screen and (max-width: 600px) {
+  .nav-about__title {
+    font-size: 30px;
+  }
+  .nav-about__ourcompany,
+  .nav-about__wecare {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+  .nav-about__p {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .nav-about__img,
+  .about-wecare__image {
+    border-radius: 10px;
+    width: 80%;
+    margin: 0;
+    float: none;
+  }
+  .nav-about__wecare {
+    padding: 100px 0;
+  }
+  .nav-about__facilies {
+    padding: 80px 0;
+  }
+  .nav-about__h4 {
+    margin-bottom: 60px;
+  }
+  .nav-about__p--facilities {
+    padding: 0;
+  }
+  .facilities-images__slider {
+    padding: 40px 0;
+  }
+  .nav-bonding__img {
+    margin-bottom: 140px;
+    width: 90%;
+  }
+  .nav-about__p--mini {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .nav-about__ourcompany {
+    padding: 60px 0 120px;
+  }
+  .nav-about__wecare {
+    padding: 60px 0;
   }
 }
 .banner {
