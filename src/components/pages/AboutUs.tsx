@@ -63,11 +63,15 @@ function AboutUs() {
             <Swiper
               className='facilities-images__slider'
               speed={1000}
+              spaceBetween={30}
               slidesPerView={1}
-              grabCursor={true}
+              allowTouchMove={false}
               navigation={{
                 nextEl: ".slider-arrow--next",
                 prevEl: ".slider-arrow--prev",
+              }}
+              pagination={{
+                clickable: true,
               }}
               modules={[Pagination, Navigation]}>
               <SwiperSlide>

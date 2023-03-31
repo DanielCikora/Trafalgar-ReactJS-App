@@ -60,15 +60,15 @@
   padding: 0 40px;
 }
 .facilities-images__slider {
-  padding: 100px 0 0;
+  padding: 50px 0;
   width: 100%;
   position: relative;
 }
 .facilities__image {
   height: auto;
-  max-height: 600px;
+  max-height: 400px;
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   border-radius: 20px;
 }
 .swiper-slide {
@@ -80,8 +80,10 @@
   position: absolute;
   display: flex;
   z-index: 10;
-  top: 50%;
-  bottom: 50%;
+  top: 0;
+  bottom: 0;
+  resize: both;
+  margin: auto 0;
   width: 100%;
 }
 // Arrow BTN
@@ -94,6 +96,10 @@
 }
 .slider-arrow--next {
   margin-left: auto;
+}
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
 }
 // Arrow IMG
 .arrow-img__prev {
@@ -143,6 +149,11 @@
     width: 80%;
     margin-bottom: 100px;
   }
+  .swiper-pagination-bullet {
+    height: 14px;
+    width: 14px;
+    display: inline-flex;
+  }
 }
 @include MobileL {
   .nav-about__title {
@@ -181,6 +192,10 @@
   }
   .facilities-images__slider {
     padding: 40px 0;
+  }
+  .swiper-pagination-bullet {
+    height: 16px;
+    width: 16px;
   }
   // Bond
   .nav-bonding__img {

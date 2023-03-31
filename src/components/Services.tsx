@@ -5,7 +5,7 @@ import Manifest from "../assets/images/manifest__image.png";
 import MedBag from "../assets/images/med-bag__image.png";
 import Report from "../assets/images/report__image.png";
 import Blob from "../assets/images/blob__image.png";
-import ServicesDots from "../assets/images/services-dots__image.png";
+import Dots from "../assets/images/dots__image.png";
 import { Link } from "react-router-dom";
 function Services() {
   return (
@@ -26,7 +26,7 @@ function Services() {
             <div className='services-dots'>
               <img
                 className='services-dots__image'
-                src={ServicesDots}
+                src={Dots}
                 alt='dots-image'
               />
             </div>
