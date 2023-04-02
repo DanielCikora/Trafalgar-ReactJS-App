@@ -15,7 +15,7 @@ function AboutUs() {
     <nav className='nav-about'>
       <div className='wrapper'>
         <div className='nav-about__content'>
-          <h2 className='title nav-about__title nav-about__h2'>About us.</h2>
+          <h2 className='title nav__title nav-about__h2'>About us.</h2>
           <div className='nav-about__ourcompany'>
             <img
               className='nav-about__img'
@@ -32,7 +32,7 @@ function AboutUs() {
               welcoming and supportive environment for our patients.
             </p>
           </div>
-          <h3 className='title nav-about__title nav-about__h3'>We care.</h3>
+          <h3 className='title nav__title nav-about__h3'>We care.</h3>
           <div className='nav-about__wecare'>
             <img
               className='about-wecare__image'
@@ -49,9 +49,7 @@ function AboutUs() {
           </div>
 
           <div className='nav-about__facilies'>
-            <h4 className='title nav-about__title nav-about__h4'>
-              Our facilities.
-            </h4>
+            <h4 className='title nav__title nav-about__h4'>Our facilities.</h4>
             <p className='paragraph nav-about__p nav-about__p--facilities'>
               Our state-of-the-art facilities are equipped with the latest
               medical technologies, allowing us to deliver advanced diagnostic
@@ -63,7 +61,6 @@ function AboutUs() {
             <Swiper
               className='facilities-images__slider'
               speed={1000}
-              spaceBetween={30}
               slidesPerView={1}
               allowTouchMove={false}
               navigation={{
@@ -125,7 +122,7 @@ function AboutUs() {
             </Swiper>
           </div>
           <div className='nav-about__partnership'>
-            <h5 className='title nav-about__title nav-about__h5'>
+            <h5 className='title nav__title nav-about__h5'>
               Build a lasting bond.
             </h5>
             <p className='paragraph nav-about__p nav-about__p--building'>

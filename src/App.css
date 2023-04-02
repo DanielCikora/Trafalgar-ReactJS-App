@@ -363,6 +363,12 @@ body {
   font-size: 36px;
 }
 
+.nav__title {
+  text-align: center;
+  -webkit-text-decoration: 2px solid underline;
+          text-decoration: 2px solid underline;
+}
+
 .btn {
   padding: 18px 40px;
   display: inline-block;
@@ -507,12 +513,6 @@ body {
   font-size: 36px;
 }
 
-.nav-about__title {
-  text-align: center;
-  -webkit-text-decoration: 2px solid underline;
-          text-decoration: 2px solid underline;
-}
-
 .about-ourcompany__text {
   display: flex;
   align-self: center;
@@ -579,6 +579,7 @@ body {
 .swiper-slide {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 
 .slider-controls {
@@ -590,6 +591,7 @@ body {
   resize: both;
   margin: auto 0;
   width: 100%;
+  max-height: 40px;
 }
 
 .slider-arrow {
@@ -722,6 +724,78 @@ body {
   }
   .nav-about__wecare {
     padding: 60px 0;
+  }
+}
+.testimonials-content {
+  font-family: "Playfair Display", serif;
+  padding: 60px 0;
+}
+
+.testimonials-boxes {
+  display: flex;
+  flex-flow: column;
+  row-gap: 40px;
+  padding-top: 140px;
+}
+
+.testimonials-client__box {
+  font-family: "Archivo Narrow", sans-serif;
+  background: linear-gradient(45deg, #fff, #d5dbdb);
+  border-radius: 24px;
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  padding: 40px;
+}
+
+.testimonials-client__review {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.testimonials-client__image {
+  display: block;
+  background-size: cover;
+  border-radius: 100%;
+  border: 2px solid #bfc9ca;
+  height: 200px;
+  width: 200px;
+}
+
+.client-review__paragraph {
+  font-size: 20px;
+  padding: 0 60px;
+}
+
+.testimonials-client__text {
+  display: flex;
+  flex-flow: column;
+}
+
+.client-text__h3 {
+  font-size: 30px;
+}
+
+.client-text__h4 {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonials-client__box {
+    background: linear-gradient(90deg, #fff, #d5dbdb);
+  }
+  .testimonials-client__review {
+    flex-flow: column;
+    text-align: center;
+  }
+  .client-review__paragraph {
+    padding: 40px 0 0 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .testimonials-client__text {
+    text-align: center;
   }
 }
 .banner {
