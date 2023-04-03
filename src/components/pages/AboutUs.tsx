@@ -21,6 +21,7 @@ function AboutUs() {
               className='nav-about__img'
               src={DoctorImage}
               alt='doctor-image'
+              loading='lazy'
             />
             <p className='paragraph nav-about__p'>
               Welcome to Trafalgar, where we are committed to improving the
@@ -38,6 +39,7 @@ function AboutUs() {
               className='about-wecare__image'
               src={WeCareImage}
               alt='we-care__image'
+              loading='lazy'
             />
             <p className='paragraph nav-about__p nav-about__p--wecare'>
               Our team of experienced and compassionate medical professionals is
@@ -76,6 +78,7 @@ function AboutUs() {
                   className='facilities__image'
                   src={OperatingTableImage}
                   alt='operating-table-image'
+                  loading='lazy'
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -83,6 +86,7 @@ function AboutUs() {
                   className='facilities__image'
                   src={FuturisticOperatingTable}
                   alt='scanning-table-image'
+                  loading='lazy'
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -90,6 +94,7 @@ function AboutUs() {
                   className='facilities__image'
                   src={ScanImage}
                   alt='scanning-table-image'
+                  loading='lazy'
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -97,6 +102,7 @@ function AboutUs() {
                   className='facilities__image'
                   src={Scanner}
                   alt='scanner-table-image'
+                  loading='lazy'
                 />
               </SwiperSlide>
               <div className='slider-controls'>
@@ -107,6 +113,7 @@ function AboutUs() {
                     className='arrow-img__prev'
                     src={SliderArrow}
                     alt='slider-arrow-previous'
+                    loading='lazy'
                   />
                 </button>
                 <button
@@ -116,6 +123,7 @@ function AboutUs() {
                     className='arrow-img__next'
                     src={SliderArrow}
                     alt='slider-arrow-next'
+                    loading='lazy'
                   />
                 </button>
               </div>
@@ -136,6 +144,7 @@ function AboutUs() {
               className='nav-bonding__img'
               src={DocAndPatient}
               alt='doctor-and-patient__image'
+              loading='lazy'
             />
             <p className='paragraph nav-about__p nav-about__p--mini'>
               Thank you for considering Trafalgar for your healthcare needs. We

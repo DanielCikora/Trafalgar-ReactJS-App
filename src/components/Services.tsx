@@ -11,7 +11,12 @@ function Services() {
   return (
     <section className='services'>
       <div className='services-blob'>
-        <img className='services-blob__image' src={Blob} alt='blob-image' />
+        <img
+          className='services-blob__image'
+          src={Blob}
+          alt='blob-image'
+          loading='lazy'
+        />
       </div>
       <div className='wrapper'>
         <div className='services-content'>
@@ -28,11 +33,16 @@ function Services() {
                 className='services-dots__image'
                 src={Dots}
                 alt='dots-image'
+                loading='lazy'
               />
             </div>
             <Link to='/FindDoctor' className='services-box'>
               <div className='box-image'>
-                <img src={MagGlass} alt='magnifying-glass-image' />
+                <img
+                  src={MagGlass}
+                  alt='magnifying-glass-image'
+                  loading='lazy'
+                />
               </div>
               <div className='box-details'>
                 <h3 className='title box-details__title'>Search doctor</h3>
@@ -44,7 +54,7 @@ function Services() {
             </Link>
             <Link to='/Apps' className='services-box'>
               <div className='box-image'>
-                <img src={PillsJar} alt='pills-jar-image' />
+                <img src={PillsJar} alt='pills-jar-image' loading='lazy' />
               </div>
               <div className='box-details'>
                 <h3 className='title box-details__title'>Online pharmacy</h3>
@@ -56,7 +66,7 @@ function Services() {
             </Link>
             <Link to='/Testimonials' className='services-box'>
               <div className='box-image'>
-                <img src={Tablet} alt='tablet-image' />
+                <img src={Tablet} alt='tablet-image' loading='lazy' />
               </div>
               <div className='box-details'>
                 <h3 className='title box-details__title'>Consultation</h3>
@@ -68,7 +78,7 @@ function Services() {
             </Link>
             <Link to='/Testimonials' className='services-box'>
               <div className='box-image'>
-                <img src={Manifest} alt='report-image' />
+                <img src={Manifest} alt='report-image' loading='lazy' />
               </div>
               <div className='box-details'>
                 <h3 className='title box-details__title'>Details info</h3>
@@ -80,7 +90,7 @@ function Services() {
             </Link>
             <Link to='/Apps' className='services-box'>
               <div className='box-image'>
-                <img src={MedBag} alt='med-bag-image' />
+                <img src={MedBag} alt='med-bag-image' loading='lazy' />
               </div>
               <div className='box-details'>
                 <h3 className='title box-details__title'>Emergency care</h3>
@@ -92,7 +102,7 @@ function Services() {
             </Link>
             <Link to='/Apps' className='services-box'>
               <div className='box-image'>
-                <img src={Report} alt='report-image' />
+                <img src={Report} alt='report-image' loading='lazy' />
               </div>
               <div className='box-details box-details--report'>
                 <h3 className='title box-details__title'>Tracking</h3>

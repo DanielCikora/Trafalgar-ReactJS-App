@@ -25,6 +25,7 @@ const Testimonials = () => {
                   className='testimonials-client__image'
                   src={ClientImage}
                   alt='client-image'
+                  loading='lazy'
                 />
                 <p className='client-review__paragraph'>
                   "I have been a patient with Trafalgar for several years now
@@ -47,6 +48,7 @@ const Testimonials = () => {
                   className='testimonials-client__image'
                   src={ClientWoman}
                   alt='client-woman__image'
+                  loading='lazy'
                 />
                 <p className='client-review__paragraph'>
                   "As someone who has struggled with chronic illness, finding a
@@ -70,6 +72,7 @@ const Testimonials = () => {
                   className='testimonials-client__image'
                   src={GirlImage}
                   alt='client-woman__image'
+                  loading='lazy'
                 />
                 <p className='client-review__paragraph'>
                   "I recently had a procedure done at Trafalgar and was blown
@@ -93,6 +96,7 @@ const Testimonials = () => {
                   className='testimonials-client__image'
                   src={ManImage}
                   alt='client-woman__image'
+                  loading='lazy'
                 />
                 <p className='client-review__paragraph'>
                   "I have been bringing my family to Trafalgar for years and
@@ -116,6 +120,7 @@ const Testimonials = () => {
                   className='testimonials-client__image'
                   src={IndianManImage}
                   alt='client-woman__image'
+                  loading='lazy'
                 />
                 <p className='client-review__paragraph'>
                   "I was hesitant to visit a new medical company for my

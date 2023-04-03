@@ -9,9 +9,9 @@ function Navigation() {
       <nav className='nav'>
         <div className='wrapper'>
           <div className='nav__content'>
-            <a href='/'>
+            <Link to='/'>
               <img src={Logo} alt='trafalgar-logo' loading='lazy' />
-            </a>
+            </Link>
             <ul className={isOpen ? "nav__ul nav__ul--open" : "nav__ul"}>
               <li className='nav__li'>
                 <Link
