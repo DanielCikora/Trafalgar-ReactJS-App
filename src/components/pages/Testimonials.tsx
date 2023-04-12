@@ -14,7 +14,7 @@ const Testimonials = () => {
   const ages = [67, 61, 26, 33, 28];
   const locations = ["New York", "California", "Texas", "Oregon", "Denver"];
   return (
-    <nav className='nav-testimonials'>
+    <div className='nav-testimonials'>
       <div className='wrapper'>
         <div className='testimonials-content'>
           <h2 className='title nav__title'>Our clients.</h2>
@@ -142,7 +142,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 export default Testimonials;

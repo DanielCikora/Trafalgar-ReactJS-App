@@ -12,7 +12,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 function AboutUs() {
   return (
-    <nav className='nav-about'>
+    <div className='nav-about'>
       <div className='wrapper'>
         <div className='nav-about__content'>
           <h2 className='title nav__title nav-about__h2'>About us.</h2>
@@ -78,7 +78,6 @@ function AboutUs() {
                   className='facilities__image'
                   src={OperatingTableImage}
                   alt='operating-table-image'
-                  loading='lazy'
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -86,7 +85,6 @@ function AboutUs() {
                   className='facilities__image'
                   src={FuturisticOperatingTable}
                   alt='scanning-table-image'
-                  loading='lazy'
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -94,7 +92,6 @@ function AboutUs() {
                   className='facilities__image'
                   src={ScanImage}
                   alt='scanning-table-image'
-                  loading='lazy'
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -102,7 +99,6 @@ function AboutUs() {
                   className='facilities__image'
                   src={Scanner}
                   alt='scanner-table-image'
-                  loading='lazy'
                 />
               </SwiperSlide>
               <div className='slider-controls'>
@@ -113,7 +109,6 @@ function AboutUs() {
                     className='arrow-img__prev'
                     src={SliderArrow}
                     alt='slider-arrow-previous'
-                    loading='lazy'
                   />
                 </button>
                 <button
@@ -123,7 +118,6 @@ function AboutUs() {
                     className='arrow-img__next'
                     src={SliderArrow}
                     alt='slider-arrow-next'
-                    loading='lazy'
                   />
                 </button>
               </div>
@@ -154,7 +148,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
 export default AboutUs;

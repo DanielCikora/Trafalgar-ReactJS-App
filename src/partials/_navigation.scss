@@ -19,17 +19,21 @@
   font-size: 18px;
   @include transition-time;
   position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    background-color: $second-black;
+    height: 2px;
+    border-radius: 4px;
+    width: 0;
+    @include transition-time;
+  }
   &:hover {
     color: $second-black;
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0%;
-      left: 0;
-      background-color: $second-black;
-      height: 2px;
-      animation: nav-line-in 0.4s both 0.2s;
-      border-radius: 4px;
+    &::before {
+      width: 100%;
     }
   }
 }
