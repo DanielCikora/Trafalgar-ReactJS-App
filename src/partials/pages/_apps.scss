@@ -21,27 +21,26 @@
 .apps-content__image {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.apps-image__link {
+.apps-image__button {
   display: flex;
-  align-items: center;
-  margin-bottom: 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 .app__image {
   display: block;
   height: 80px;
   width: 80px;
   border-radius: 12px;
-  transition: all 1.5s ease-in-out;
   &:hover {
-    transform: rotateY(360deg);
+    border: 2px solid $black;
   }
 }
 // Icons
 .apps-image__icons {
   display: flex;
-  gap: 14px;
+  column-gap: 14px;
 }
 .apps-icon__link {
   text-decoration: none;
@@ -66,20 +65,19 @@
   }
 }
 // Text
-.apps-content__text {
-  display: flex;
-  align-items: center;
-  position: relative;
+.apps-box {
+  .apps-content__text {
+    max-width: 800px;
+    height: 0;
+    display: none;
+  }
 }
+
 .apps-text__title {
-  font-family: "Abel", sans-serif;
+  font-family: $archivo-narrow;
   font-size: 40px;
   font-weight: 600;
-  color: $second-grey;
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  z-index: -1;
+  color: $navy-blue;
 }
 .apps-text__paragraph {
   position: relative;
@@ -87,6 +85,14 @@
   font-weight: 500;
   font-size: 18px;
 }
+// Active Class (Open Class)
+.apps-box--open {
+  .apps-content__text {
+    display: block;
+    height: 100%;
+  }
+}
+
 // Media Query
 @include Tablet {
   .nav-apps {

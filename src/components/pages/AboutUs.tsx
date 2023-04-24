@@ -7,9 +7,10 @@ import Scanner from "../../assets/images/scanner__image.jpg";
 import DocAndPatient from "../../assets/images/doctor-and-patient__image.jpg";
 import SliderArrow from "../../assets/images/slider-arrow.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 function AboutUs() {
   return (
     <div className='nav-about'>
@@ -49,7 +50,6 @@ function AboutUs() {
               services, we are here to help.
             </p>
           </div>
-
           <div className='nav-about__facilies'>
             <h4 className='title nav__title nav-about__h4'>Our facilities.</h4>
             <p className='paragraph nav-about__p nav-about__p--facilities'>
@@ -60,70 +60,56 @@ function AboutUs() {
               research and innovations to ensure that our patients receive the
               most effective and cutting-edge treatments available.
             </p>
-            <Swiper
-              className='facilities-images__slider'
-              speed={1000}
-              slidesPerView={1}
-              allowTouchMove={false}
-              navigation={{
-                nextEl: ".slider-arrow--next",
-                prevEl: ".slider-arrow--prev",
-              }}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Pagination, Navigation]}>
-              <SwiperSlide>
-                <img
-                  className='facilities__image'
-                  src={OperatingTableImage}
-                  alt='operating-table-image'
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className='facilities__image'
-                  src={FuturisticOperatingTable}
-                  alt='scanning-table-image'
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className='facilities__image'
-                  src={ScanImage}
-                  alt='scanning-table-image'
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className='facilities__image'
-                  src={Scanner}
-                  alt='scanner-table-image'
-                />
-              </SwiperSlide>
-              <div className='slider-controls'>
-                <button
-                  type='button'
-                  className='slider-arrow slider-arrow--prev'>
-                  <img
-                    className='arrow-img__prev'
-                    src={SliderArrow}
-                    alt='slider-arrow-previous'
-                  />
-                </button>
-                <button
-                  type='button'
-                  className='slider-arrow slider-arrow--next'>
-                  <img
-                    className='arrow-img__next'
-                    src={SliderArrow}
-                    alt='slider-arrow-next'
-                  />
-                </button>
-              </div>
-            </Swiper>
           </div>
-          <div className='nav-about__partnership'>
+        </div>
+      </div>
+      <Swiper
+        className='facilities-images__slFider'
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 10,
+          stretch: 0,
+          depth: 500,
+          modifier: 3,
+          slideShadows: false,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}>
+        <SwiperSlide>
+          <img
+            className='facilities__image'
+            src={OperatingTableImage}
+            alt='operating-table-image'
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className='facilities__image'
+            src={FuturisticOperatingTable}
+            alt='scanning-table-image'
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className='facilities__image'
+            src={ScanImage}
+            alt='scanning-table-image'
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className='facilities__image'
+            src={Scanner}
+            alt='scanner-table-image'
+          />
+        </SwiperSlide>
+      </Swiper>
+      <div className='nav-about__partnership'>
+        <div className='wrapper'>
+          <div className='partnership-content'>
             <h5 className='title nav__title nav-about__h5'>
               Build a lasting bond.
             </h5>

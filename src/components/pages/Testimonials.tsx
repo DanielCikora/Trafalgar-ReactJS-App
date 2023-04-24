@@ -9,7 +9,7 @@ const Testimonials = () => {
     "Ruth George",
     "Sarah Parker",
     "Tyrone Williams",
-    "Amir Malhotra",
+    "Rajesh Kapoor",
   ];
   const ages = [67, 61, 26, 33, 28];
   const locations = ["New York", "California", "Texas", "Oregon", "Denver"];
