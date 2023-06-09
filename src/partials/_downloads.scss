@@ -1,0 +1,52 @@
+.downloads {
+  padding: 90px 0;
+}
+.downloads__wrapper {
+  display: flex;
+}
+.downloads-content__text {
+  padding: 33px 0 0 88px;
+}
+.downloads-text__title {
+  max-width: 254px;
+  position: relative;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 64px;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -32px;
+    left: 2px;
+    height: 2px;
+    width: 56px;
+    background-color: $black;
+  }
+}
+.downloads-text__paragraph {
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 420px;
+  padding-right: 40px;
+  margin-bottom: 38px;
+}
+.downloads-text__button {
+  padding: 16px 66px 16px 41px;
+  position: relative;
+  &:hover {
+    .downloads-button__arrow {
+      fill: white;
+    }
+  }
+  .downloads-button__arrow {
+    position: absolute;
+    top: 18px;
+    right: 41px;
+    @include transition-time;
+  }
+}
+// Image
+.downloads__image {
+  height: auto;
+  width: 100%;
+}
