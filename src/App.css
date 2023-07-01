@@ -1167,7 +1167,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .providers {
-    padding: 126px 0 134px;
+    padding: 30px 0;
   }
   .providers__content {
     flex-flow: column-reverse;
@@ -1176,7 +1176,7 @@ body {
     text-align: right;
   }
   .providers-image__container {
-    margin: -100px auto 0;
+    margin: -120px auto 0;
     position: relative;
     z-index: -1;
   }
@@ -1185,8 +1185,6 @@ body {
   }
   .providers-text__h3 {
     padding: 0;
-    -webkit-text-decoration: 2px solid underline;
-            text-decoration: 2px solid underline;
   }
   .providers-text__h3::after {
     display: none;
@@ -1237,7 +1235,7 @@ body {
   }
 }
 .downloads {
-  padding: 90px 0;
+  padding: 20px 0;
 }
 
 .downloads__wrapper {
@@ -1290,4 +1288,93 @@ body {
 .downloads__image {
   height: auto;
   width: 100%;
+  max-width: 665px;
+}
+
+@media only screen and (max-width: 992px) {
+  .downloads__wrapper {
+    flex-flow: column;
+  }
+  .downloads-content__image {
+    position: relative;
+    z-index: -1;
+    margin: -120px auto 0;
+  }
+  .downloads__image {
+    opacity: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .downloads-content__text {
+    text-align: center;
+    padding: 0;
+  }
+  .downloads-text__title,
+  .downloads-text__paragraph {
+    max-width: 100%;
+  }
+  .downloads-text__title {
+    font-size: 30px;
+  }
+  .downloads-text__paragraph {
+    padding: 0;
+    font-size: 16px;
+  }
+  .downloads-text__title::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.testimonials__content {
+  height: 425px;
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 24px;
+}
+
+.testimonials__h2 {
+  padding-top: 40px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+.testimonials__h2::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 56px;
+  background-color: #fff;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+}
+
+.card-details__image {
+  border-radius: 100%;
+  border: 2px solid #fff;
+  margin-right: 32px;
+}
+
+.card-description__name {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 110px;
+}
+
+.card-description__title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.review__paragraph {
+  max-width: 420px;
+  font-size: 19px;
+  line-height: 30px;
+  color: #fff;
 }/*# sourceMappingURL=App.css.map */

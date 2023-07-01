@@ -61,7 +61,7 @@
 }
 @include Laptop {
   .providers {
-    padding: 126px 0 134px;
+    padding: 30px 0;
   }
   .providers__content {
     flex-flow: column-reverse;
@@ -70,7 +70,7 @@
     text-align: right;
   }
   .providers-image__container {
-    margin: -100px auto 0;
+    margin: -120px auto 0;
     position: relative;
     z-index: -1;
   }
@@ -79,7 +79,6 @@
   }
   .providers-text__h3 {
     padding: 0;
-    text-decoration: 2px solid underline;
     &::after {
       display: none;
     }

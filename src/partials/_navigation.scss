@@ -20,7 +20,7 @@
   @include transition-time;
   position: relative;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0%;
     left: 0;
@@ -46,6 +46,8 @@
   margin-left: auto;
   display: none;
 }
+// Toggle Button
+
 // Media queries
 @include LaptopXL {
   .nav {

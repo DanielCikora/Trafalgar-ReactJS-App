@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import ProvidersImage from "../assets/images/providers-section__image.png";
-import Dots from "../assets/images/dots__image.png";
+import { Link } from 'react-router-dom';
+import ProvidersImage from '../assets/images/providers-section__image.png';
+import Dots from '../assets/images/dots__image.png';
 const Providers = () => {
   return (
-    <article className="providers">
+    <section className="providers">
       <div className="providers-dots__container">
         <img
           className="providers__dots"
@@ -37,7 +37,7 @@ const Providers = () => {
           </div>
         </div>
       </div>
-    </article>
+    </section>
   );
 };
 export default Providers;

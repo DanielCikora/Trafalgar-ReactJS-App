@@ -1,0 +1,50 @@
+.testimonials__content {
+  height: 425px;
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 24px;
+}
+.testimonials__h2 {
+  padding-top: 40px;
+  text-align: center;
+  position: relative;
+  color: $white;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 56px;
+    background-color: $white;
+  }
+}
+.card-details {
+  display: flex;
+  align-items: center;
+}
+// Card Image
+.card-details__image {
+  border-radius: 100%;
+  border: 2px solid $white;
+  margin-right: 32px;
+}
+
+// Card Text
+.card-description__name {
+  color: $white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 110px;
+}
+.card-description__title {
+  color: $white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.review__paragraph {
+  max-width: 420px;
+  font-size: 19px;
+  line-height: 30px;
+  color: $white;
+}
