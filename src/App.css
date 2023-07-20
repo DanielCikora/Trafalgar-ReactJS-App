@@ -1357,6 +1357,10 @@ body {
   border-radius: 100%;
   border: 2px solid #fff;
   margin-right: 32px;
+  max-height: 133px;
+  max-width: 133px;
+  height: auto;
+  width: 100%;
 }
 
 .card-description__name {
@@ -1377,4 +1381,17 @@ body {
   font-size: 19px;
   line-height: 30px;
   color: #fff;
+}
+
+.swiper-button-prev {
+  rotate: 180deg;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: none;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
 }/*# sourceMappingURL=App.css.map */

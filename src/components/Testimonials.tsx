@@ -4,10 +4,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import Customer1 from '../assets/images/customer__image1.png';
+import Customer2 from '../assets/images/asian-woman-happy.png';
+import Customer3 from '../assets/images/south-asian-man-happy.png';
+import Customer4 from '../assets/images/caucasian-woman-happy.png';
+import SliderBtn from '../assets/images/slider-arrow.png';
 export default function Testimonials() {
   const card = {
     title: 'What our customers are saying',
     alt: 'customer-image',
+  };
+  const arrow = {
+    src: SliderBtn,
+    alt: 'slider-btn',
   };
   return (
     <section className="testimonials">
@@ -15,7 +23,10 @@ export default function Testimonials() {
         <div className="testimonials__content">
           <h2 className="title testimonials__h2">{card.title}</h2>
           <Swiper
-            navigation={true}
+            navigation={{
+              prevEl: '.swiper-button-prev',
+              nextEl: '.swiper-button-next',
+            }}
             pagination={true}
             modules={[Autoplay, Navigation, Pagination]}
             className="testimonials__cards"
@@ -50,7 +61,7 @@ export default function Testimonials() {
               <div className="card-details">
                 <img
                   className="card-details__image"
-                  src={Customer1}
+                  src={Customer2}
                   alt={card.alt}
                 />
                 <div className="card-description">
@@ -70,7 +81,7 @@ export default function Testimonials() {
               <div className="card-details">
                 <img
                   className="card-details__image"
-                  src={Customer1}
+                  src={Customer3}
                   alt={card.alt}
                 />
                 <div className="card-description">
@@ -90,7 +101,7 @@ export default function Testimonials() {
               <div className="card-details">
                 <img
                   className="card-details__image"
-                  src={Customer1}
+                  src={Customer4}
                   alt={card.alt}
                 />
                 <div className="card-description">
@@ -110,6 +121,14 @@ export default function Testimonials() {
                 </div>
               </div>
             </SwiperSlide>
+            <div className="swiper-arrows">
+              <button className="swiper-button-prev" type="button">
+                <img src={arrow.src} alt={arrow.alt} />
+              </button>
+              <button className="swiper-button-next" type="button">
+                <img src={arrow.src} alt={arrow.alt} />
+              </button>
+            </div>
           </Swiper>
         </div>
       </div>

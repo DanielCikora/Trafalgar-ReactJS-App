@@ -28,6 +28,10 @@
   border-radius: 100%;
   border: 2px solid $white;
   margin-right: 32px;
+  max-height: 133px;
+  max-width: 133px;
+  height: auto;
+  width: 100%;
 }
 
 // Card Text
@@ -47,4 +51,15 @@
   font-size: 19px;
   line-height: 30px;
   color: $white;
+}
+// Swiper Arrows
+.swiper-button-prev {
+  rotate: 180deg;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background: none;
+  &::after {
+    display: none;
+  }
 }
