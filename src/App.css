@@ -1327,12 +1327,15 @@ body {
 }
 .testimonials__content {
   height: 425px;
+  max-width: 1120px;
+  width: 100%;
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
   border-radius: 24px;
+  margin: 0 auto;
 }
 
 .testimonials__h2 {
-  padding-top: 40px;
+  padding-top: 68px;
   text-align: center;
   position: relative;
   color: #fff;
@@ -1340,7 +1343,7 @@ body {
 .testimonials__h2::before {
   content: "";
   position: absolute;
-  bottom: -15px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
@@ -1383,15 +1386,42 @@ body {
   color: #fff;
 }
 
+.swiper {
+  padding-top: 100px;
+}
+
+.swiper-arrows {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .swiper-button-prev {
   rotate: 180deg;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
+  position: static;
   background: none;
+  justify-content: baseline;
+  align-items: baseline;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
+}
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-pagination-horizontal {
+  margin: 0;
+}
+
+.swiper-pagination-bullet {
+  height: 10px;
+  width: 10px;
+  margin: 0 10px;
 }/*# sourceMappingURL=App.css.map */

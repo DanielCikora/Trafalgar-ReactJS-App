@@ -27,15 +27,13 @@ export default function Testimonials() {
               prevEl: '.swiper-button-prev',
               nextEl: '.swiper-button-next',
             }}
-            pagination={true}
+            pagination={{
+              el: '.swiper-pagination',
+              clickable: true,
+            }}
             modules={[Autoplay, Navigation, Pagination]}
             className="testimonials__cards"
             slidesPerView={1}
-            loop={true}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: true,
-            }}
           >
             <SwiperSlide>
               <div className="card-details">
@@ -121,15 +119,21 @@ export default function Testimonials() {
                 </div>
               </div>
             </SwiperSlide>
-            <div className="swiper-arrows">
-              <button className="swiper-button-prev" type="button">
-                <img src={arrow.src} alt={arrow.alt} />
-              </button>
-              <button className="swiper-button-next" type="button">
-                <img src={arrow.src} alt={arrow.alt} />
-              </button>
-            </div>
           </Swiper>
+        </div>
+        <div className="swiper-arrows">
+          <button className="swiper-button-prev" type="button">
+            <img src={arrow.src} alt={arrow.alt} />
+          </button>
+          <div className="swiper-pagination">
+            <span className="swiper-pagination-bullet"></span>
+            <span className="swiper-pagination-bullet"></span>
+            <span className="swiper-pagination-bullet"></span>
+            <span className="swiper-pagination-bullet"></span>
+          </div>
+          <button className="swiper-button-next" type="button">
+            <img src={arrow.src} alt={arrow.alt} />
+          </button>
         </div>
       </div>
     </section>
