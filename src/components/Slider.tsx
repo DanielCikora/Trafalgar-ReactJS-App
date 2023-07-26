@@ -48,9 +48,9 @@ export default function Slider() {
                 </div>
                 <div className="card__review">
                   <p className="paragraph review__paragraph">
-                    “Our dedicated patient engagement app and web portal allow
+                    "Our dedicated patient engagement app and web portal allow
                     you to access information instantaneously (no tedeous form,
-                    long calls, or administrative hassle) and securely”
+                    long calls, or administrative hassle) and securely"
                   </p>
                 </div>
               </div>
@@ -63,14 +63,14 @@ export default function Slider() {
                   alt={card.alt}
                 />
                 <div className="card-description">
-                  <h3 className="card-description__name">Edward Newgate</h3>
-                  <h4 className="card-description__title">Founder Circle</h4>
+                  <h3 className="card-description__name">Anong Wang</h3>
+                  <h4 className="card-description__title">Data Analyst</h4>
                 </div>
                 <div className="card__review">
                   <p className="paragraph review__paragraph">
-                    “Our dedicated patient engagement app and web portal allow
-                    you to access information instantaneously (no tedeous form,
-                    long calls, or administrative hassle) and securely”
+                    "Efficient, compassionate, and user-friendly. Doctors
+                    respond fast, and I feel empowered in my healthcare.
+                    Impressive experience!"
                   </p>
                 </div>
               </div>
@@ -83,14 +83,15 @@ export default function Slider() {
                   alt={card.alt}
                 />
                 <div className="card-description">
-                  <h3 className="card-description__name">Edward Newgate</h3>
-                  <h4 className="card-description__title">Founder Circle</h4>
+                  <h3 className="card-description__name">Amir Al-Mansoori</h3>
+                  <h4 className="card-description__title">
+                    IT Support Specialist
+                  </h4>
                 </div>
                 <div className="card__review">
                   <p className="paragraph review__paragraph">
-                    “Our dedicated patient engagement app and web portal allow
-                    you to access information instantaneously (no tedeous form,
-                    long calls, or administrative hassle) and securely”
+                    "Effortless access to vital information, caring doctors, and
+                    a game-changer for my health journey. Highly recommended!"
                   </p>
                 </div>
               </div>
@@ -104,17 +105,16 @@ export default function Slider() {
                 />
                 <div className="card-description">
                   <h3 className="title card-description__name">
-                    Edward Newgate
+                    Ingrid Svensson
                   </h3>
                   <h4 className="title card-description__title">
-                    Founder Circle
+                    Sales Representative
                   </h4>
                 </div>
                 <div className="card__review">
                   <p className="paragraph review__paragraph">
-                    “Our dedicated patient engagement app and web portal allow
-                    you to access information instantaneously (no tedeous form,
-                    long calls, or administrative hassle) and securely”
+                    "Exceptional care, fast and friendly doctors, and a breeze
+                    to use. The best medical website experience ever!"
                   </p>
                 </div>
               </div>
