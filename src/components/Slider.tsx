@@ -8,7 +8,7 @@ import Customer2 from '../assets/images/asian-woman-happy.png';
 import Customer3 from '../assets/images/south-asian-man-happy.png';
 import Customer4 from '../assets/images/caucasian-woman-happy.png';
 import SliderBtn from '../assets/images/slider-arrow.png';
-export default function Testimonials() {
+export default function Slider() {
   const card = {
     title: 'What our customers are saying',
     alt: 'customer-image',
@@ -18,10 +18,10 @@ export default function Testimonials() {
     alt: 'slider-btn',
   };
   return (
-    <section className="testimonials">
-      <div className="wrapper testimonials__wrapper">
-        <div className="testimonials__content">
-          <h2 className="title testimonials__h2">{card.title}</h2>
+    <section className="slider">
+      <div className="wrapper slider__wrapper">
+        <div className="slider__content">
+          <h2 className="title slider__h2">{card.title}</h2>
           <Swiper
             navigation={{
               prevEl: '.swiper-button-prev',
@@ -32,7 +32,7 @@ export default function Testimonials() {
               clickable: true,
             }}
             modules={[Autoplay, Navigation, Pagination]}
-            className="testimonials__cards"
+            className="slider__cards"
             slidesPerView={1}
           >
             <SwiperSlide>

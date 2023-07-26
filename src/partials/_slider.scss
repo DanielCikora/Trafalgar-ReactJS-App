@@ -1,4 +1,4 @@
-.testimonials__content {
+.slider__content {
   height: 425px;
   max-width: 1120px;
   width: 100%;
@@ -6,7 +6,7 @@
   border-radius: 24px;
   margin: 0 auto;
 }
-.testimonials__h2 {
+.slider__h2 {
   padding-top: 68px;
   text-align: center;
   position: relative;
@@ -71,8 +71,8 @@
 .swiper-button-next {
   position: static;
   background: none;
-  justify-content: baseline;
-  align-items: baseline;
+  justify-content: unset;
+  margin: 0;
   &::after {
     display: none;
   }
@@ -80,6 +80,7 @@
 // Swiper Pagination
 .swiper-pagination {
   position: static;
+  align-self: center;
 }
 .swiper-pagination-horizontal {
   margin: 0;

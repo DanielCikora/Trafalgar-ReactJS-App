@@ -2,7 +2,7 @@ import Banner from '../Banner';
 import Services from '../Services';
 import Providers from '../Providers';
 import Downloads from '../Downloads';
-import Testimonials from '../Testimonials';
+import Slider from '../Slider';
 export default function Home() {
   return (
     <main>
@@ -10,7 +10,7 @@ export default function Home() {
       <Services />
       <Providers />
       <Downloads />
-      <Testimonials />
+      <Slider />
     </main>
   );
 }
