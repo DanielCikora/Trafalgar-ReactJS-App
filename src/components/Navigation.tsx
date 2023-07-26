@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Twirl as Hamburger } from 'hamburger-react';
 import Logo from '../assets/images/trafalgar-logo__image.png';
 import { Link } from 'react-router-dom';
-import ModeSwitch from './micro-components/ModeSwitch';
 function Navigation() {
   const [isOpen, setOpen] = useState(false);
   return (
@@ -13,7 +12,6 @@ function Navigation() {
             <Link to="/">
               <img src={Logo} alt="trafalgar-logo" loading="lazy" />
             </Link>
-            <ModeSwitch />
             <ul className={isOpen ? 'nav__ul nav__ul--open' : 'nav__ul'}>
               <li className="nav__li">
                 <Link

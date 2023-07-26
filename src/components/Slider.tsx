@@ -8,6 +8,8 @@ import Customer2 from '../assets/images/asian-woman-happy.png';
 import Customer3 from '../assets/images/south-asian-man-happy.png';
 import Customer4 from '../assets/images/caucasian-woman-happy.png';
 import SliderBtn from '../assets/images/slider-arrow.png';
+import WhiteDots from '../assets/images/white-dots__image.png';
+import BlueDots from '../assets/images/dots__image.png';
 export default function Slider() {
   const card = {
     title: 'What our customers are saying',
@@ -17,12 +19,30 @@ export default function Slider() {
     src: SliderBtn,
     alt: 'slider-btn',
   };
+  const dots = {
+    srcWhite: WhiteDots,
+    srcBlue: BlueDots,
+    alt: 'dots-image',
+  };
   return (
     <section className="slider">
       <div className="wrapper slider__wrapper">
         <div className="slider__content">
+          <img
+            className="slider__dots slider__dots--white"
+            src={dots.srcWhite}
+            alt={dots.alt}
+          />
+          <img
+            className="slider__dots slider__dots--blue"
+            src={dots.srcBlue}
+            alt={dots.alt}
+          />
           <h2 className="title slider__h2">{card.title}</h2>
           <Swiper
+            className="slider__cards"
+            modules={[Autoplay, Navigation, Pagination]}
+            loop={true}
             navigation={{
               prevEl: '.swiper-button-prev',
               nextEl: '.swiper-button-next',
@@ -31,8 +51,11 @@ export default function Slider() {
               el: '.swiper-pagination',
               clickable: true,
             }}
-            modules={[Autoplay, Navigation, Pagination]}
-            className="slider__cards"
+            autoplay={{
+              delay: 4000,
+              pauseOnMouseEnter: true,
+              disableOnInteraction: true,
+            }}
             slidesPerView={1}
           >
             <SwiperSlide>
