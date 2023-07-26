@@ -56,6 +56,12 @@
   }
 }
 @include Laptop {
+  .banner {
+    padding-top: 88px;
+  }
+  .banner-dots__image {
+    top: 88px;
+  }
   .banner-image__image {
     opacity: 40%;
     max-width: 60%;

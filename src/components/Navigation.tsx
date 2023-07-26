@@ -1,12 +1,28 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Twirl as Hamburger } from 'hamburger-react';
 import Logo from '../assets/images/trafalgar-logo__image.png';
 import { Link } from 'react-router-dom';
 function Navigation() {
   const [isOpen, setOpen] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <header>
-      <nav className="nav">
+      <nav className={`nav ${isFixed ? 'nav--fixed' : ''}`}>
         <div className="wrapper">
           <div className="nav__content">
             <Link to="/">

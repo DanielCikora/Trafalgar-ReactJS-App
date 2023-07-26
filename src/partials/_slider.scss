@@ -1,3 +1,7 @@
+.slider {
+  padding: 176px 0;
+  overflow-x: hidden;
+}
 .slider__content {
   height: 425px;
   max-width: 1120px;
@@ -105,4 +109,62 @@
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
+}
+// Media Query
+@include Laptop {
+  .slider__content {
+    height: 100%;
+  }
+  .card-details {
+    flex-flow: column;
+  }
+  .card-details__image {
+    margin: 0;
+  }
+  .card-description__name {
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+  }
+  .card-description__title {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .review__paragraph {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .slider__h2 {
+    font-size: 32px;
+  }
+}
+@include Tablet {
+  .card-details {
+    padding: 0 20px;
+  }
+  .slider__h2 {
+    font-size: 30px;
+  }
+  .card-description__name {
+    font-size: 20px;
+  }
+  .card-description__title {
+    font-size: 18px;
+  }
+  .review__paragraph {
+    font-size: 16px;
+  }
+}
+@include MobileL {
+  .swiper {
+    padding-top: 60px;
+  }
+  .slider__h2 {
+    padding: 40px 10px 0 10px;
+  }
+}
+@include Mobile {
+  .slider__h2 {
+    font-size: 24px;
+  }
 }

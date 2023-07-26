@@ -471,14 +471,27 @@ body {
   }
 }
 @media only screen and (max-width: 992px) {
+  .nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #fff;
+  }
+  .nav--fixed {
+    position: fixed;
+    outline: 1px solid #7d7987;
+  }
   .hamburger-react {
     display: flex;
   }
   .nav__ul {
     display: none;
-    height: 100dvh;
-    height: 100vh;
+    height: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease;
   }
   .nav__ul--open {
     display: block;
@@ -489,7 +502,7 @@ body {
     background-color: #fff;
     padding: 0;
     z-index: 9999;
-    animation: slideDown 1s normal;
+    height: 100vh;
   }
   .nav__ul--open .nav__li {
     margin: 60px 0;
@@ -918,6 +931,12 @@ body {
   }
 }
 @media only screen and (max-width: 992px) {
+  .banner {
+    padding-top: 88px;
+  }
+  .banner-dots__image {
+    top: 88px;
+  }
   .banner-image__image {
     opacity: 40%;
     max-width: 60%;
@@ -1235,7 +1254,7 @@ body {
   }
 }
 .downloads {
-  padding: 20px 0;
+  padding: 86px 0;
 }
 
 .downloads__wrapper {
@@ -1325,6 +1344,11 @@ body {
     transform: translateX(-50%);
   }
 }
+.slider {
+  padding: 176px 0;
+  overflow-x: hidden;
+}
+
 .slider__content {
   height: 425px;
   max-width: 1120px;
@@ -1444,4 +1468,62 @@ body {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
+}
+
+@media only screen and (max-width: 992px) {
+  .slider__content {
+    height: 100%;
+  }
+  .card-details {
+    flex-flow: column;
+  }
+  .card-details__image {
+    margin: 0;
+  }
+  .card-description__name {
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+  }
+  .card-description__title {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .review__paragraph {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .slider__h2 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card-details {
+    padding: 0 20px;
+  }
+  .slider__h2 {
+    font-size: 30px;
+  }
+  .card-description__name {
+    font-size: 20px;
+  }
+  .card-description__title {
+    font-size: 18px;
+  }
+  .review__paragraph {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .swiper {
+    padding-top: 60px;
+  }
+  .slider__h2 {
+    padding: 40px 10px 0 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .slider__h2 {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=App.css.map */

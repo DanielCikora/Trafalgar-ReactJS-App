@@ -55,14 +55,27 @@
   }
 }
 @include Laptop {
+  .nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: $white;
+  }
+  .nav--fixed {
+    position: fixed;
+    outline: 1px solid $light-grey;
+  }
   .hamburger-react {
     display: flex;
   }
   .nav__ul {
     display: none;
-    height: 100dvh;
-    height: 100vh;
+    height: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease;
   }
   .nav__ul--open {
     display: block;
@@ -73,7 +86,7 @@
     background-color: $white;
     padding: 0;
     z-index: 9999;
-    animation: slideDown 1s normal;
+    height: 100vh;
     .nav__li {
       margin: 60px 0;
       justify-content: center;
