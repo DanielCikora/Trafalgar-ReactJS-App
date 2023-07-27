@@ -156,6 +156,9 @@
   }
 }
 @include MobileL {
+  .slider {
+    padding: 80px 0;
+  }
   .swiper {
     padding-top: 60px;
   }
@@ -164,6 +167,9 @@
   }
 }
 @include Mobile {
+  .slider {
+    padding: 40px 0;
+  }
   .slider__h2 {
     font-size: 24px;
   }

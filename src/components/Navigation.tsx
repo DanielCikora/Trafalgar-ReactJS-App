@@ -20,6 +20,14 @@ function Navigation() {
     };
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('open');
+    } else {
+      document.body.classList.remove('open');
+    }
+  });
+
   return (
     <header>
       <nav className={`nav ${isFixed ? 'nav--fixed' : ''}`}>

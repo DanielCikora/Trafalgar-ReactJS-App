@@ -471,6 +471,9 @@ body {
   }
 }
 @media only screen and (max-width: 992px) {
+  .open {
+    overflow: hidden;
+  }
   .nav {
     position: absolute;
     width: 100%;
@@ -1515,6 +1518,9 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
+  .slider {
+    padding: 80px 0;
+  }
   .swiper {
     padding-top: 60px;
   }
@@ -1523,6 +1529,9 @@ body {
   }
 }
 @media only screen and (max-width: 450px) {
+  .slider {
+    padding: 40px 0;
+  }
   .slider__h2 {
     font-size: 24px;
   }

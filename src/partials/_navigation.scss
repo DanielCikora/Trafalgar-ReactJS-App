@@ -53,6 +53,9 @@
   }
 }
 @include Laptop {
+  .open {
+    overflow: hidden;
+  }
   .nav {
     position: absolute;
     width: 100%;
