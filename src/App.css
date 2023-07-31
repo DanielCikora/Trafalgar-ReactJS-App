@@ -965,6 +965,9 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
+  .banner-content {
+    padding-bottom: 60px;
+  }
   .banner-text__h1 {
     font-size: 26px;
   }
@@ -1114,6 +1117,12 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
+  .services {
+    padding: 70px 0;
+  }
+  .services-title__h2 {
+    font-size: 24px;
+  }
   .box-image {
     align-self: center;
   }
@@ -1243,8 +1252,11 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
+  .providers {
+    padding: 60px 0 140px;
+  }
   .providers-text__h3 {
-    font-size: 28px;
+    font-size: 24px;
   }
   .providers-text__paragraph {
     font-size: 14px;
@@ -1345,6 +1357,11 @@ body {
   .downloads-text__title::before {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .downloads-text__title {
+    font-size: 24px;
   }
 }
 .slider {
@@ -1519,12 +1536,13 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .slider {
-    padding: 80px 0;
+    padding: 60px 0 20px;
   }
   .swiper {
     padding-top: 60px;
   }
   .slider__h2 {
+    font-size: 24px;
     padding: 40px 10px 0 10px;
   }
 }
