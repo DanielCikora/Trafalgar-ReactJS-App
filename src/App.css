@@ -1553,4 +1553,31 @@ body {
   .slider__h2 {
     font-size: 24px;
   }
+}
+.article__h2 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+.article__h2::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  height: 2px;
+  transform: translateX(-50%);
+  width: 56px;
+  background-color: #000000;
+}
+
+.article-cards {
+  display: flex;
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.article-card__image {
+  border-radius: 24px 24px 0 0;
 }/*# sourceMappingURL=App.css.map */

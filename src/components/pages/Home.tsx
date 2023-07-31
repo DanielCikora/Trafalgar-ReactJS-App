@@ -3,6 +3,7 @@ import Services from '../Services';
 import Providers from '../Providers';
 import Downloads from '../Downloads';
 import Slider from '../Slider';
+import Article from '../Article';
 export default function Home() {
   return (
     <main>
@@ -11,6 +12,7 @@ export default function Home() {
       <Providers />
       <Downloads />
       <Slider />
+      <Article />
     </main>
   );
 }

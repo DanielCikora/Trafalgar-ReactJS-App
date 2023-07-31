@@ -1,0 +1,28 @@
+.article__h2 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 80px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        height: 2px;
+        transform: translateX(-50%);
+        width: 56px;
+        background-color: $black;
+    }
+}
+
+.article-cards {
+    display: flex;
+    column-gap: 34px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+// Card Images
+.article-card__image {
+    border-radius: 24px 24px 0 0;
+}
