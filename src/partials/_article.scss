@@ -1,3 +1,7 @@
+.article {
+    padding: 80px 0;
+}
+
 .article__h2 {
     text-align: center;
     position: relative;
@@ -22,7 +26,43 @@
     flex-wrap: wrap;
 }
 
+
+
+// Cards
+.article-card {
+    max-width: 350px;
+    height: 512px;
+    box-shadow: 10px 10px 30px $black;
+    border-radius: 24px;
+}
+
+// Cards Details
+.article-card__details {
+    padding: 20px 62px 0 33px;
+}
+
+.article-details__h3 {
+    line-height: 32px;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.article-details__p {
+    margin-bottom: 28px;
+}
+
+.article-details__btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: $third-blue;
+}
+
 // Card Images
 .article-card__image {
+    height: auto;
+    width: 100%;
     border-radius: 24px 24px 0 0;
 }

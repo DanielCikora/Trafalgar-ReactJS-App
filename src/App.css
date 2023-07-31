@@ -1554,6 +1554,10 @@ body {
     font-size: 24px;
   }
 }
+.article {
+  padding: 80px 0;
+}
+
 .article__h2 {
   text-align: center;
   position: relative;
@@ -1578,6 +1582,38 @@ body {
   flex-wrap: wrap;
 }
 
+.article-card {
+  max-width: 350px;
+  height: 512px;
+  box-shadow: 10px 10px 30px #000000;
+  border-radius: 24px;
+}
+
+.article-card__details {
+  padding: 20px 62px 0 33px;
+}
+
+.article-details__h3 {
+  line-height: 32px;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.article-details__p {
+  margin-bottom: 28px;
+}
+
+.article-details__btn {
+  width: 100%;
+  text-align: left;
+  background: none;
+  font-weight: 600;
+  font-size: 17px;
+  color: #4089ED;
+}
+
 .article-card__image {
+  height: auto;
+  width: 100%;
   border-radius: 24px 24px 0 0;
 }/*# sourceMappingURL=App.css.map */

@@ -5,7 +5,6 @@ import ScanImage from '../../assets/images/scan__image.jpg';
 import FuturisticOperatingTable from '../../assets/images/futuristic-operating-table__image.jpeg';
 import Scanner from '../../assets/images/scanner__image.jpg';
 import DocAndPatient from '../../assets/images/doctor-and-patient__image.jpg';
-import SliderArrow from '../../assets/images/slider-arrow.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper';
 import 'swiper/css';
