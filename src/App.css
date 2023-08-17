@@ -1610,10 +1610,21 @@ body {
   font-weight: 600;
   font-size: 17px;
   color: #4089ED;
+  transition: all 0.3s ease-in-out;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.article-details__btn:hover {
+  background-color: #5b9bf3;
+  color: #fff;
 }
 
 .article-card__image {
   height: auto;
   width: 100%;
   border-radius: 24px 24px 0 0;
+}
+
+.article-card--read-more .article-details__p {
+  color: red;
 }/*# sourceMappingURL=App.css.map */

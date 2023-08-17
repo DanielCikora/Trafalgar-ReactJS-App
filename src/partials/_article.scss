@@ -1,68 +1,70 @@
 .article {
-    padding: 80px 0;
+  padding: 80px 0;
 }
-
 .article__h2 {
-    text-align: center;
-    position: relative;
-    margin-bottom: 80px;
-
-    &::before {
-        content: '';
-        position: absolute;
-        bottom: -15px;
-        left: 50%;
-        height: 2px;
-        transform: translateX(-50%);
-        width: 56px;
-        background-color: $black;
-    }
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    height: 2px;
+    transform: translateX(-50%);
+    width: 56px;
+    background-color: $black;
+  }
 }
-
 .article-cards {
-    display: flex;
-    column-gap: 34px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  column-gap: 34px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-
-
 // Cards
 .article-card {
-    max-width: 350px;
-    height: 512px;
-    box-shadow: 10px 10px 30px $black;
-    border-radius: 24px;
+  max-width: 350px;
+  height: 512px;
+  box-shadow: 10px 10px 30px $black;
+  border-radius: 24px;
 }
-
 // Cards Details
 .article-card__details {
-    padding: 20px 62px 0 33px;
+  padding: 20px 62px 0 33px;
 }
-
 .article-details__h3 {
-    line-height: 32px;
-    font-size: 21px;
-    margin-bottom: 12px;
+  line-height: 32px;
+  font-size: 21px;
+  margin-bottom: 12px;
 }
-
 .article-details__p {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
-
 .article-details__btn {
-    width: 100%;
-    text-align: left;
-    background: none;
-    font-weight: 600;
-    font-size: 17px;
-    color: $third-blue;
+  width: 100%;
+  text-align: left;
+  background: none;
+  font-weight: 600;
+  font-size: 17px;
+  color: $third-blue;
+  @include transition-time;
+  border-radius: 24px;
+  cursor: pointer;
+  &:hover {
+    background-color: $second-blue;
+    color: $white;
+  }
 }
-
 // Card Images
 .article-card__image {
-    height: auto;
-    width: 100%;
-    border-radius: 24px 24px 0 0;
+  height: auto;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+}
+// Card Open
+.article-card--read-more {
+  .article-details__p {
+    color: red;
+  }
 }
