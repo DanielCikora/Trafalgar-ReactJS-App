@@ -31,7 +31,8 @@
 }
 // Cards Details
 .article-card__details {
-  padding: 20px 62px 0 33px;
+  padding: 20px 54px 0 33px;
+  position: relative;
 }
 .article-details__h3 {
   line-height: 32px;
@@ -39,10 +40,12 @@
   margin-bottom: 12px;
 }
 .article-details__p {
-  margin-bottom: 28px;
+  line-height: 28px;
 }
 .article-details__btn {
-  width: 100%;
+  position: absolute;
+  top: 208px;
+  left: 27px;
   text-align: left;
   background: none;
   font-weight: 600;
@@ -64,7 +67,11 @@
 }
 // Card Open
 .article-card--read-more {
-  .article-details__p {
-    color: red;
+  max-height: 600px;
+  height: 800px;
+  .article-details__btn {
+    rotate: 90deg;
+    left: -40px;
+    top: 100px;
   }
 }

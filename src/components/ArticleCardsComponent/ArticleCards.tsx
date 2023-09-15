@@ -1,6 +1,5 @@
 import ArrowIconSmall from '../micro-components/ArrowIconSmall';
 import { useState } from 'react';
-
 interface ArticleCardProps {
   title: string;
   text: string;
@@ -24,7 +23,8 @@ const ArticleCards: React.FC<ArticleCardProps> = ({
         <h2 className='title article-details__h3'>{title}</h2>
         <p className='article-details__p'>{text}</p>
         <button className='article-details__btn' onClick={handleReadMore}>
-          Read More <ArrowIconSmall />
+          Read more
+          <ArrowIconSmall />
         </button>
       </div>
     </div>
