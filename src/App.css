@@ -1590,7 +1590,8 @@ body {
 }
 
 .article-card__details {
-  padding: 20px 62px 0 33px;
+  padding: 20px 54px 0 33px;
+  position: relative;
 }
 
 .article-details__h3 {
@@ -1600,11 +1601,13 @@ body {
 }
 
 .article-details__p {
-  margin-bottom: 28px;
+  line-height: 28px;
 }
 
 .article-details__btn {
-  width: 100%;
+  position: absolute;
+  top: 208px;
+  left: 27px;
   text-align: left;
   background: none;
   font-weight: 600;
@@ -1625,6 +1628,12 @@ body {
   border-radius: 24px 24px 0 0;
 }
 
-.article-card--read-more .article-details__p {
-  color: red;
+.article-card--read-more {
+  max-height: 600px;
+  height: 800px;
+}
+.article-card--read-more .article-details__btn {
+  rotate: 90deg;
+  left: -40px;
+  top: 100px;
 }/*# sourceMappingURL=App.css.map */
