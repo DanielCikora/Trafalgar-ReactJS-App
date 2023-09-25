@@ -1621,11 +1621,20 @@ body {
 
 .article-details__p {
   line-height: 28px;
+<<<<<<< HEAD
   margin-bottom: 4px;
   animation: fade-in-out 1s normal;
 }
 
 .article-details__btn {
+=======
+}
+
+.article-details__btn {
+  position: absolute;
+  top: 208px;
+  left: 27px;
+>>>>>>> d9f4d138cb4329b4b691738399b5e2718cd5ed77
   text-align: left;
   background: none;
   font-weight: 600;
@@ -1654,6 +1663,7 @@ body {
 }
 
 .article-card--read-more {
+<<<<<<< HEAD
   height: 580px;
   transition: all 0.3s ease-in-out;
 }
@@ -1664,4 +1674,13 @@ body {
   animation: fade-out-in 1s normal;
   position: absolute;
   top: 280px;
+=======
+  max-height: 600px;
+  height: 800px;
+}
+.article-card--read-more .article-details__btn {
+  rotate: 90deg;
+  left: -40px;
+  top: 100px;
+>>>>>>> d9f4d138cb4329b4b691738399b5e2718cd5ed77
 }/*# sourceMappingURL=App.css.map */

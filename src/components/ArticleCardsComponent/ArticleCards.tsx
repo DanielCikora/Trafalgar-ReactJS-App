@@ -25,7 +25,11 @@ const ArticleCards: React.FC<ArticleCardProps> = ({
           {isReadMore ? text : `${text.slice(0, 90)}...`}
         </p>
         <button className='article-details__btn' onClick={handleReadMore}>
+<<<<<<< HEAD
           {isReadMore ? 'Read Less' : 'Read More'}
+=======
+          Read more
+>>>>>>> d9f4d138cb4329b4b691738399b5e2718cd5ed77
           <ArrowIconSmall />
         </button>
       </div>
