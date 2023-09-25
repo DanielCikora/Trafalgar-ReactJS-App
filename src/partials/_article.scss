@@ -30,6 +30,7 @@
   box-shadow: 10px 10px 30px $black;
   border-radius: 24px;
   @include transition-time;
+  overflow: hidden;
 }
 // Cards Details
 .article-card__details {
@@ -44,6 +45,7 @@
 .article-details__p {
   line-height: 28px;
   margin-bottom: 4px;
+  animation: fade-in-out 1s normal;
 }
 .article-details__btn {
   text-align: left;
@@ -55,6 +57,7 @@
   border-radius: 4px;
   padding: 0;
   cursor: pointer;
+  animation: fade-in-out 1s normal;
   &:hover {
     background-color: $second-blue;
     color: $white;
@@ -65,9 +68,22 @@
   height: auto;
   width: 100%;
   border-radius: 24px 24px 0 0;
+  max-height: 240px;
+  @include transition-time;
+  &:hover {
+    scale: 1.2;
+  }
 }
 // Card Open
 .article-card--read-more {
-  height: 550px;
+  height: 580px;
   @include transition-time;
+  .article-details__p {
+    animation: fade-out-in 1s normal;
+  }
+  .article-details__btn {
+    animation: fade-out-in 1s normal;
+    position: absolute;
+    top: 280px;
+  }
 }
