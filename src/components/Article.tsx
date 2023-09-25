@@ -8,13 +8,11 @@ export default function Article() {
     text2: string;
     text3: string;
   }
-
   const cardText: cardTextProps = {
-    text1: `In this case, the role of the health laboratory is very important to do a disease detection...that can lead to early intervention and better treatment outcomes.`,
-    text2: `Herbal medicine is very widely used at this time because of its very good for your health...and its natural properties often complement traditional medical approaches effectively.`,
-    text3: `A healthy lifestyle should start from now and also for your skin health. There are some...simple yet impactful skincare routines that can help maintain a radiant complexion over time.`,
+    text1: `In this case, the role of the health laboratory is very important to do a disease detection that can lead to early intervention and better treatment outcomes.`,
+    text2: `Herbal medicine is very widely used at this time because of its very good for your health and its natural properties often complement traditional medical approaches effectively.`,
+    text3: `A healthy lifestyle should start from now and also for your skin health. There are some simple yet impactful skincare routines that can help maintain a radiant complexion over time.`,
   };
-
   return (
     <article className='article'>
       <div className='wrapper article__wrapper'>
