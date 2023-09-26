@@ -47,6 +47,10 @@
   margin-bottom: 4px;
   animation: fade-in-out 1s normal;
 }
+.arrow-icon__small {
+  width: 20px;
+  height: 20px;
+}
 .article-details__btn {
   text-align: left;
   background: none;
@@ -61,8 +65,12 @@
   &:hover {
     background-color: $second-blue;
     color: $white;
+    .arrow-icon__small {
+      fill: $white;
+    }
   }
 }
+
 // Card Images
 .article-card__image {
   height: auto;

@@ -1625,6 +1625,11 @@ body {
   animation: fade-in-out 1s normal;
 }
 
+.arrow-icon__small {
+  width: 20px;
+  height: 20px;
+}
+
 .article-details__btn {
   text-align: left;
   background: none;
@@ -1640,6 +1645,9 @@ body {
 .article-details__btn:hover {
   background-color: #5b9bf3;
   color: #fff;
+}
+.article-details__btn:hover .arrow-icon__small {
+  fill: #fff;
 }
 
 .article-card__image {
