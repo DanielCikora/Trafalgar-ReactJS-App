@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 interface LinkProps {
   linkClass: string;
   linkText: string;
@@ -5,9 +6,9 @@ interface LinkProps {
 }
 const Button: React.FC<LinkProps> = ({ linkClass, href, linkText }) => {
   return (
-    <a className={linkClass} href={href}>
+    <Link className={linkClass} to={href}>
       {linkText}
-    </a>
+    </Link>
   );
 };
 export default Button;

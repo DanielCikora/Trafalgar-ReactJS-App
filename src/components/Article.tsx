@@ -43,7 +43,7 @@ export default function Article() {
             imageSrc={skinCareImage}
           />
         </div>
-        <Button linkClass='btn' href='#' linkText='View All' />
+        <Button linkClass='btn article-btn' href='#' linkText='View all' />
       </div>
     </article>
   );
