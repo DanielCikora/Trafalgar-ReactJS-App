@@ -4,6 +4,7 @@ import Providers from '../Providers';
 import Downloads from '../Downloads';
 import Slider from '../Slider';
 import Article from '../Article';
+import Footer from '../Footer';
 export default function Home() {
   return (
     <main>
@@ -13,6 +14,7 @@ export default function Home() {
       <Downloads />
       <Slider />
       <Article />
+      <Footer />
     </main>
   );
 }
