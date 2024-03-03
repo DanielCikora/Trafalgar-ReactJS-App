@@ -1747,4 +1747,8 @@ body {
     gap: 50px 0;
     align-items: center;
   }
+}
+.footer {
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  padding: 100px 0;
 }/*# sourceMappingURL=App.css.map */
