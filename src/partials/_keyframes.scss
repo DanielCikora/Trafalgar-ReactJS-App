@@ -38,3 +38,11 @@
     opacity: 1;
   }
 }
+@keyframes navDrop {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}

@@ -1,5 +1,22 @@
 .nav {
   padding: 56px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  z-index: 9999;
+}
+.nav--fixed {
+  position: fixed;
+  padding: 14px 0;
+  width: 70%;
+  transform: translateX(-50%);
+  margin-top: 4px;
+  left: 50%;
+  outline: 1px solid $light-grey;
+  border-radius: 50px;
+  animation: navDrop 1.5s normal;
 }
 .nav__content {
   display: flex;
@@ -8,34 +25,9 @@
 .nav__ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  column-gap: 41px;
   justify-content: flex-end;
   width: 100%;
-}
-.nav__li-a {
-  display: flex;
-  text-decoration: none;
-  color: $light-grey;
-  font-size: 18px;
-  @include transition-time;
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 0%;
-    left: 0;
-    background-color: $second-black;
-    height: 2px;
-    border-radius: 4px;
-    width: 0;
-    @include transition-time;
-  }
-  &:hover {
-    color: $second-black;
-    &::before {
-      width: 100%;
-    }
-  }
 }
 .nav__li-a--active {
   color: $second-black;
@@ -47,27 +39,26 @@
   display: none;
 }
 // Media queries
+@media only screen and (min-width: 1600px) {
+  .nav--fixed {
+    width: 50%;
+  }
+}
 @include LaptopXL {
-  .nav {
-    padding: 20px 0;
+  .nav--fixed {
+    width: 80%;
   }
 }
 @include Laptop {
+  .nav--fixed {
+    width: 100%;
+    transform: translateX(0);
+    left: 0;
+    border-radius: 0;
+    margin-top: 0;
+  }
   .open {
     overflow: hidden;
-  }
-  .nav {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    background-color: $white;
-  }
-  .nav--fixed {
-    position: fixed;
-    outline: 1px solid $light-grey;
   }
   .hamburger-react {
     display: flex;
@@ -81,7 +72,7 @@
   .nav__ul--open {
     display: block;
     position: absolute;
-    top: 88px;
+    top: 76px;
     left: 0;
     width: 100%;
     background-color: $white;

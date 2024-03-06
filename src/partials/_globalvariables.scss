@@ -5,6 +5,31 @@
   text-align: center;
   text-decoration: 2px solid underline;
 }
+.link {
+  display: flex;
+  text-decoration: none;
+  color: $light-grey;
+  font-size: 18px;
+  @include transition-time;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    background-color: $second-black;
+    height: 2px;
+    border-radius: 4px;
+    width: 0;
+    @include transition-time;
+  }
+  &:hover {
+    color: $second-black;
+    &::before {
+      width: 100%;
+    }
+  }
+}
 .btn {
   padding: 18px 40px;
   display: inline-block;
@@ -19,7 +44,7 @@
   background-color: $white;
   border: 2px solid $blue;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 30%;
     left: 25%;
