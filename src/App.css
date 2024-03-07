@@ -479,9 +479,10 @@ body {
   transform: translateX(-50%);
   margin-top: 4px;
   left: 50%;
+  right: 50%;
   outline: 1px solid #7d7987;
   border-radius: 50px;
-  animation: navDrop 1.5s normal;
+  animation: navDrop 1s normal;
 }
 
 .nav__content {
@@ -523,6 +524,7 @@ body {
     width: 100%;
     transform: translateX(0);
     left: 0;
+    right: 0;
     border-radius: 0;
     margin-top: 0;
   }
