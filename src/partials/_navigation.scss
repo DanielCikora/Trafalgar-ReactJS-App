@@ -42,15 +42,21 @@
 // Media queries
 @media only screen and (min-width: 1600px) {
   .nav--fixed {
-    width: 50%;
+    width: 60%;
   }
 }
 @include LaptopXL {
+  .nav {
+    padding: 20px 0;
+  }
   .nav--fixed {
     width: 80%;
   }
 }
 @include Laptop {
+  .nav {
+    top: 0;
+  }
   .nav--fixed {
     width: 100%;
     transform: translateX(0);
@@ -89,6 +95,14 @@
     .nav__li-a {
       font-size: 24px;
     }
+  }
+}
+@include Tablet {
+  .nav {
+    padding: 6px 0;
+  }
+  .nav__ul--open {
+    top: 60px;
   }
 }
 @include MobileL {

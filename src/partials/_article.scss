@@ -1,5 +1,5 @@
 .article {
-  padding: 12px 0 213px;
+  padding: 12px 0 329px;
   position: relative;
 }
 .article-blob {
@@ -9,6 +9,9 @@
   z-index: -1;
   height: auto;
   width: auto;
+}
+.article__wrapper {
+  position: relative;
 }
 .article__h2 {
   text-align: center;
@@ -31,20 +34,26 @@
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  padding-bottom: 117px;
 }
 // Dots
-.article-dots {
+.article-dots__corner {
   position: absolute;
   top: -42px;
   left: 0;
   z-index: -1;
 }
+.article-dots__bottom {
+  position: absolute;
+  bottom: -43px;
+  right: 91px;
+  z-index: -1;
+}
 // Cards
 .article-card {
   max-width: 350px;
-  max-height: 100%;
-  height: 512px;
+  width: 100%;
+  height: auto;
+  min-height: 512px;
   box-shadow: 0 0 6px $black;
   border-radius: 24px;
   @include transition-time;
@@ -67,6 +76,8 @@
   animation: fade-in-out 1s normal;
 }
 .arrow-icon__small {
+  @include transition-time;
+  transform: rotate(0deg);
   margin-left: 14px;
 }
 .article-details__btn {
@@ -126,13 +137,18 @@
     position: absolute;
     top: 280px;
   }
+  .arrow-icon__small {
+    transform: rotate(-90deg);
+  }
 }
 // Button
 .article-btn {
   position: absolute;
+  bottom: 202px;
+  width: 100%;
+  max-width: max-content;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
   padding: 16px 64px;
 }
 // Media Query
@@ -173,5 +189,50 @@
     flex-flow: column-reverse;
     gap: 50px 0;
     align-items: center;
+  }
+}
+@include Tablet {
+  .article__h2 {
+    font-size: 30px;
+  }
+  .article-card {
+    min-height: auto;
+  }
+  .article-card--read-more {
+    height: 530px;
+    .article-details__btn {
+      top: 240px;
+    }
+  }
+  .article-details__h3 {
+    font-size: 18px;
+  }
+  .article-details__p {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .article-details__btn {
+    font-size: 14px;
+  }
+  .article-btn {
+    padding: 12px 48px;
+    font-size: 16px;
+  }
+}
+@include MobileL {
+  .article {
+    padding: 10px 0 220px;
+  }
+  .article-btn {
+    bottom: 120px;
+  }
+}
+@include MobileM {
+  .article-details__h3 {
+    font-size: 16px;
+  }
+  .article-details__p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }

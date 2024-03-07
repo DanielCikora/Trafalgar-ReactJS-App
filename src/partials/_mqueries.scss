@@ -23,3 +23,8 @@
     @content;
   }
 }
+@mixin MobileM {
+  @media only screen and (max-width: 350px) {
+    @content;
+  }
+}
