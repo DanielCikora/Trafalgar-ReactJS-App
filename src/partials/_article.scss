@@ -52,13 +52,12 @@
 .article-card {
   max-width: 350px;
   width: 100%;
-  height: auto;
-  min-height: 512px;
+  height: 512px;
   box-shadow: 0 0 6px $black;
   border-radius: 24px;
-  @include transition-time;
   overflow: hidden;
   background-color: $white;
+  @include transition-time;
 }
 // Cards Details
 .article-card__details {
@@ -136,9 +135,6 @@
     animation: fade-out-in 1s normal;
     position: absolute;
     top: 280px;
-  }
-  .arrow-icon__small {
-    transform: rotate(-90deg);
   }
 }
 // Button

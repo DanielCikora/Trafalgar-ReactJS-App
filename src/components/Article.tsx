@@ -45,7 +45,7 @@ export default function Article() {
           />
         </div>
       </div>
-      <Button linkClass='btn article-btn' href='#' linkText='View all' />
+      <Button linkClass='btn article-btn' href='/AboutUs' linkText='View all' />
     </article>
   );
 }
