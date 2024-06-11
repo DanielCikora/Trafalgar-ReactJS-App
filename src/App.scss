@@ -5,12 +5,13 @@
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/globalvariables";
-// Navigation
+////////////  Navigation  ///////////
+@import "partials/lazy-load";
 @import "partials/navigation";
 @import "partials/pages/apps";
 @import "partials/pages/testimonials";
 @import "partials/pages/about";
-/////////////////////////////////////////
+////////////////////////////////////
 @import "partials/banner";
 @import "partials/services";
 @import "partials/providers";

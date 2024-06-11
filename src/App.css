@@ -462,6 +462,14 @@ body {
   line-height: 28px;
 }
 
+.loader {
+  height: 100dvh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #d5dbdb;
+}
+
 .nav {
   padding: 56px 0;
   position: absolute;
@@ -933,6 +941,7 @@ body {
   position: relative;
   background-image: linear-gradient(to right, #fff, rgb(245, 245, 250));
   padding-top: 157px;
+  overflow-x: hidden;
 }
 
 .banner-dots__image {
@@ -988,6 +997,8 @@ body {
   z-index: 1;
   height: auto;
   width: 100%;
+  display: block;
+  overflow: hidden;
   max-height: 598px;
   max-width: 693px;
 }
@@ -1034,6 +1045,7 @@ body {
   }
   .banner-text__h1 {
     font-size: 26px;
+    line-height: 32px;
   }
   .banner-text__paragraph {
     font-size: 14px;
@@ -1822,6 +1834,14 @@ body {
   }
   .article-card {
     min-height: auto;
+  }
+  .article-details__btn::before {
+    display: none;
+  }
+  .article-details__btn:hover {
+    color: #000000;
+    -webkit-text-decoration: 2px underline #000000;
+            text-decoration: 2px underline #000000;
   }
   .article-card--read-more {
     height: 530px;

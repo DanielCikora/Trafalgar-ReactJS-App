@@ -1,3 +1,4 @@
+import LazyLoad from "./components/micro-components/LazyLoad";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -12,11 +13,10 @@ import Apps from "./components/pages/Apps";
 import FindDoctor from "./components/pages/FindDoctor";
 import NoPage from "./components/pages/NoPage";
 import Testimonials from "./components/pages/Testimonials";
-
 export default function App() {
   return (
     <BrowserRouter>
-      <div>
+      <LazyLoad>
         <Navigation />
         <Routes>
           <Route
@@ -39,7 +39,7 @@ export default function App() {
           <Route path='*' element={<NoPage />} />
         </Routes>
         <Footer />
-      </div>
+      </LazyLoad>
     </BrowserRouter>
   );
 }

@@ -194,6 +194,15 @@
   .article-card {
     min-height: auto;
   }
+  .article-details__btn {
+    &::before {
+      display: none;
+    }
+    &:hover {
+      color: $black;
+      text-decoration: 2px underline $black;
+    }
+  }
   .article-card--read-more {
     height: 530px;
     .article-details__btn {
